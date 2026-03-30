@@ -1,1 +1,3 @@
-# scene-graph.github.io
+# Scene Graph Structured Intelligence
+
+https://scene-graph.github.io
