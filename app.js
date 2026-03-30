@@ -232,18 +232,28 @@ function renderResearchGroups() {
 
     const cards = group.papers
       .map(
+        
         (paper) => {
           const visual = paper.image
             ? `
               <div class="paper-thumb paper-thumb--image">
-                <img src="${paper.image}" alt="${paper.imageAlt || paper.title}" />
+                <div class="paper-thumb__image-wrapper">
+                  <div class="paper-thumb__topline">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="paper-thumb__code">${paper.code}</div>
+                  <img src="${paper.image}" alt="${paper.imageAlt || paper.title}" />
+                  <div class="paper-thumb__image-overlay"></div>
+                  
+                </div>
               </div>
             `
             : `
               <div class="paper-thumb">
                 <div class="paper-thumb__topline">
-                  <span>${paper.thumbLabel}</span>
-                  <span>PNG slot</span>
+                  <span></span>
+                  <span></span>
                 </div>
                 <div class="paper-thumb__code">${paper.code}</div>
                 <div class="paper-thumb__footer">
@@ -253,6 +263,7 @@ function renderResearchGroups() {
             `;
 
           return `
+
           <article class="paper-card theme-${group.theme} reveal">
             ${visual}
             <div class="paper-body">
@@ -277,6 +288,7 @@ function renderResearchGroups() {
                   .join("")}
               </div>
             </div>
+            
           </article>
         `
         }

@@ -8,12 +8,12 @@
       content="Scene Graph Structured Intelligence (SG-SI): a research series on scene graphs as the structured bridge between multimodal perception, reasoning, and generation."
     />
     <title>Scene Graph Structured Intelligence</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+
+      <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css" />
     <script defer src="app.js"></script>
   </head>
@@ -47,10 +47,10 @@
         <div class="hero-layout">
           <div class="hero-copy">
             <p class="hero-lead">
-              A research thread on scene graphs as the explicit structural representations
+              A research thread on <span class="highlight-term">scene graphs</span>  as the explicit structural representations
               connecting and facilitating comprehension, reasoning, and generation across text,
               image, video, 3D, and 4D worlds, etc.
-              As multimodal foundation models grow more capable, scene graphs are expected to
+              As multimodal foundation models grow more capable, <span class="highlight-term">scene graphs</span> are expected to
               offer the missing bias toward better controllability, explainability, and
               stronger generalization.
             </p>
@@ -64,7 +64,7 @@
           <div class="hero-visual panel">
             <img
               class="hero-cover"
-              src="sg-cover.png"
+              src="assets/sg-cover.png"
               alt="Scene Graph Structured Intelligence cover figure"
             />
           </div>
@@ -73,7 +73,7 @@
         <div class="vision-layout hero-vision">
           <figure class="panel vision-figure">
             <img
-              src="intro-SG.png"
+              src="assets/intro-SG.png"
               alt="Scene graph examples across image, text, and video inputs."
             />
             <figcaption>
@@ -83,25 +83,27 @@
           </figure>
 
           <article class="vision-copy">
-            <p>
-              A scene graph is a topological structure representing a scene
-              described in text, image, video, or other modalities. Nodes encode
-              object categories, attributes, or regions; edges encode pair-wise
-              relationships. That explicit structure makes scene graphs a natural
-              bridge from perception to reasoning and generation.
-            </p>
-            <p>
-              Scene graphs provide a structured and interpretable representation
-              of objects, attributes, and relationships in 2D, 3D, and even 4D
-              scenes. They make complex scenes decomposable, editable, and
-              easier to align across modalities.
-            </p>
-            <p>
-              With multimodal foundation models rapidly scaling, integrating
-              scene graphs can be benefitial: offerring
-              controllability, explainability, and stronger generalization
-              across domains, viewpoints, and input types.
-            </p>
+            <div>
+              <p>
+                A <span class="highlight-term">scene graph</span> is a topological structure representing a scene
+                described in text, image, video, or other modalities. Nodes encode
+                object categories, attributes, or regions; edges encode pair-wise
+                relationships. That explicit structure makes <span class="highlight-term">scene graphs</span> a natural
+                bridge from perception to reasoning and generation.
+              </p>
+              <p>
+                <span class="highlight-term">Scene graphs</span>  provide a structured and interpretable representation
+                of objects, attributes, and relationships in 2D, 3D, and even 4D
+                scenes. They make complex scenes decomposable, editable, and
+                easier to align across modalities.
+              </p>
+              <p>
+                With multimodal foundation models rapidly scaling, integrating
+                <span class="highlight-term">scene graphs</span> can be benefitial: offerring
+                controllability, explainability, and stronger generalization
+                across domains, viewpoints, and input types.
+              </p>
+            </div>
             <div class="vision-points">
               <article>
                 <span>01</span>
