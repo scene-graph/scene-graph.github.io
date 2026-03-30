@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Scene Graph Structured Intelligence (SG-SI): a research series on scene graphs as the structured bridge between multimodal perception, reasoning, and generation."
+    />
+    <title>Scene Graph Structured Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Scene Graph Structured Intelligence home">
+          <span class="brand-mark">SG</span>
+          <span class="brand-text">
+            <strong>Scene Graph</strong>
+            <span>Structured Intelligence</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#vision">Motivation</a>
+          <a href="#research">Research</a>
+          <a href="#workshop">Workshop</a>
+          <a href="#survey">Survey</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section id="vision" class="hero reveal">
+        <div class="hero-head">
+          <p class="eyebrow">Research Series</p>
+          <h1>Scene Graph <span>Structured Intelligence</span></h1>
+        </div>
+
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="hero-lead">
+              A research thread on scene graphs as the explicit structural representations
+              connecting and facilitating comprehension, reasoning, and generation across text,
+              image, video, 3D, and 4D worlds, etc.
+              As multimodal foundation models grow more capable, scene graphs are expected to
+              offer the missing bias toward better controllability, explainability, and
+              stronger generalization.
+            </p>
+            <!-- <p class="hero-body">
+              As multimodal foundation models grow more capable, scene graphs
+              offer the missing bias toward controllability, explainability, and
+              stronger generalization.
+            </p> -->
+          </div>
+
+          <div class="hero-visual panel">
+            <img
+              class="hero-cover"
+              src="sg-cover.png"
+              alt="Scene Graph Structured Intelligence cover figure"
+            />
+          </div>
+        </div>
+
+        <div class="vision-layout hero-vision">
+          <figure class="panel vision-figure">
+            <img
+              src="intro-SG.png"
+              alt="Scene graph examples across image, text, and video inputs."
+            />
+            <figcaption>
+              <em>Scene graphs (SGs) unify objects, attributes, and relationships across vairous modalities, serving as a structured interface for
+              image, text, video, 3D, and 4D representations.</em>
+            </figcaption>
+          </figure>
+
+          <article class="vision-copy">
+            <p>
+              A scene graph is a topological structure representing a scene
+              described in text, image, video, or other modalities. Nodes encode
+              object categories, attributes, or regions; edges encode pair-wise
+              relationships. That explicit structure makes scene graphs a natural
+              bridge from perception to reasoning and generation.
+            </p>
+            <p>
+              Scene graphs provide a structured and interpretable representation
+              of objects, attributes, and relationships in 2D, 3D, and even 4D
+              scenes. They make complex scenes decomposable, editable, and
+              easier to align across modalities.
+            </p>
+            <p>
+              With multimodal foundation models rapidly scaling, integrating
+              scene graphs can be benefitial: offerring
+              controllability, explainability, and stronger generalization
+              across domains, viewpoints, and input types.
+            </p>
+            <div class="vision-points">
+              <article>
+                <span>01</span>
+                <h3>Improving cross-modal alignment</h3>
+                <p>More fine-grained vision-text matching.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Enhancing multimodal fusion</h3>
+                <p>Semantic-level feature learning.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>More controllable task modeling</h3>
+                <p>Highly structured modal representation.</p>
+              </article>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="research" class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Flagship Research</p>
+            <!-- <h2>Three connected directions, one structured agenda.</h2> -->
+          </div>
+          <!-- <p class="section-intro">
+            SG-SI treats scene graphs as an explicit interface layer:
+            representing scenes, improving multimodal understanding, and
+            guiding controllable generation.
+          </p> -->
+        </div>
+
+        <div class="thread-grid">
+          <a class="thread-card theme-amber" href="#research">
+            <p class="thread-card__eyebrow">Track 01</p>
+            <h3>Scene Graph Generation / Parsing</h3>
+            <p>From 4D dynamic scenes to universal cross-modal parsers.</p>
+          </a>
+          <a class="thread-card theme-sage" href="#research">
+            <p class="thread-card__eyebrow">Track 02</p>
+            <h3>Cross-modal Comprehension / Reasoning</h3>
+            <p>Use structure to align language, video, 3D scenes, translation, and IE.</p>
+          </a>
+          <a class="thread-card theme-sky" href="#research">
+            <p class="thread-card__eyebrow">Track 03</p>
+            <h3>Cross-modal Generation</h3>
+            <p>Turn scene structure into explicit guidance for image and video synthesis.</p>
+          </a>
+        </div>
+      <!-- </section>
+
+      <section id="research" class="section reveal"> -->
+        <div class="section-head">
+          <!-- <div>
+            <p class="eyebrow">Research Threads</p>
+            <h2>Flagship works across the SG-SI research line.</h2>
+          </div>
+          <p class="section-intro">
+            Each project card links outward and includes a built-in visual slot,
+            so you can later swap in the final PNG illustration for each paper
+            without changing the page structure.
+          </p> -->
+        </div>
+        <div id="research-sections" class="research-sections"></div>
+      </section>
+
+      <section id="workshop" class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Workshops</p>
+          </div>
+        </div>
+
+        <article class="panel workshop-feature">
+          <div class="workshop-feature__visual">
+            <span class="workshop-badge">WACV26</span>
+            <div class="workshop-feature__frame">
+              <strong>Scene Graph for Structured Intelligence</strong>
+              <p>Workshop series page and community hub</p>
+            </div>
+          </div>
+          <div class="workshop-feature__body">
+            <div class="workshop-feature__meta">
+              <span class="meta-pill">Featured workshop</span>
+              <span class="meta-pill meta-pill--soft">Community event</span>
+            </div>
+            <h3>SG4SI @ WACV 2026</h3>
+            <p class="workshop-feature__lead">
+              A focal workshop that brings the SG-SI thread into public view:
+              structured scene representation, multimodal reasoning,
+              controllable generation, and embodied intelligence under one
+              community-facing program.
+            </p>
+            <p>
+              It serves as the public face of the series, creating a visible
+              entry point for collaborators, benchmark discussions, invited
+              talks, and future positioning of scene graphs in structured
+              multimodal intelligence.
+            </p>
+            <div class="mini-points">
+              <span>Research visibility</span>
+              <span>Community building</span>
+              <span>Future directions</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="https://scene-graph.github.io/SG4SI-WACV26/" target="_blank" rel="noreferrer">
+                Workshop page
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="survey" class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Survey</p>
+          </div>
+        </div>
+
+        <div class="survey-stack">
+          <article class="panel survey-row survey-row--survey">
+            <div class="survey-row__showcase">
+              <div class="survey-showcase-card">
+                <span class="meta-pill meta-pill--gold">Coming soon</span>
+                <strong>SG-SI Survey</strong>
+                <p>
+                  A forthcoming synthesis of the SG-SI landscape: tasks,
+                  benchmarks, methods, and open problems across structured
+                  multimodal intelligence.
+                </p>
+              </div>
+            </div>
+            <div class="survey-row__detail">
+              <div class="survey-row__meta">
+                <span class="meta-pill">Survey paper</span>
+                <span class="meta-pill meta-pill--gold">In preparation</span>
+              </div>
+              <h3>Systematic landscape review</h3>
+              <h4>Taxonomy, methods, and open challenges</h4>
+              <p>
+                This module is reserved for the survey paper that will organize
+                the SG-SI thread from a higher level: what counts as scene
+                graph structured intelligence, how existing approaches differ,
+                which evaluation settings are still missing, and where the most
+                important opportunities lie.
+              </p>
+              <div class="resource-pills">
+                <span>Taxonomy</span>
+                <span>Method landscape</span>
+                <span>Open problems</span>
+              </div>
+              <span class="survey-link-placeholder">Link will be added when available</span>
+            </div>
+          </article>
+
+          <article class="panel survey-row survey-row--repo">
+            <div class="survey-row__showcase">
+              <div class="survey-showcase-card">
+                <span class="meta-pill meta-pill--soft">Community curated</span>
+                <strong>Awesome Scene Graph Generation</strong>
+                <p>
+                  A living repository that tracks the broader scene graph
+                  landscape, including papers, applications, and community
+                  resources.
+                </p>
+                <div class="resource-pills resource-pills--showcase">
+                  <span>Papers</span>
+                  <span>Applications</span>
+                  <span>Resources</span>
+                </div>
+              </div>
+            </div>
+            <div class="survey-row__detail">
+              <div class="survey-row__meta">
+                <span class="meta-pill">Community resource</span>
+                <span class="meta-pill meta-pill--gold">GitHub repository</span>
+              </div>
+              <h3>Awesome Scene Graph Generation</h3>
+              <h4>Curated resources for the broader scene graph landscape</h4>
+              <p>
+                This repository systematizes scene graph generation and adjacent
+                SG-SI directions through a continuously maintained collection of
+                resources: paper lists, datasets, codebases, and broader
+                community updates.
+              </p>
+              <div class="resource-pills">
+                <span>Paper collections</span>
+                <span>Datasets and tools</span>
+                <span>Community updates</span>
+              </div>
+              <div class="card-actions">
+                <a
+                  class="btn"
+                  href="https://github.com/ChocoWu/Awesome-Scene-Graph-Generation"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub repo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; Copyright <span id="year"></span> Scene Graph Structured Intelligence (SG-SI). All rights reserved.</p>
+      <p>
+        Contact:
+        <a href="https://haofei.vip/" target="_blank" rel="noreferrer">Hao Fei</a>
+        (<a href="mailto:haofei7419@gmail.com">haofei7419@gmail.com</a>);
+        <a href="https://sqwu.top/" target="_blank" rel="noreferrer">Shengqiong Wu</a>
+        (<a href="mailto:shengqiongwu@gmail.com">shengqiongwu@gmail.com</a>).
+      </p>
+    </footer>
+  </body>
+</html>
