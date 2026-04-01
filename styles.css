@@ -339,10 +339,10 @@ main {
 
 .panel {
   position: relative;
-  /* border: 1px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius-xl);
-  background: linear-gradient(180deg, var(--paper-strong), var(--paper));
-  box-shadow: var(--shadow); */
+  /* background: linear-gradient(180deg, var(--paper-strong), var(--paper)); */
+  box-shadow: var(--shadow);
 }
 
 .hero-visual {
